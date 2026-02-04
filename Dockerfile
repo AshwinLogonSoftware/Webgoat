@@ -32,4 +32,9 @@ ENTRYPOINT [ "java", \
    "-Dwebwolf.host=0.0.0.0", \
    "-Dwebgoat.port=8080", \
    "-Dwebwolf.port=9090", \
+# Mend traceability labels
+LABEL io.mend.identifier=fe3d91f7ecc4411088369d52382cde44ecaeddc98a934c3896bff2667c58d886
+LABEL io.mend.image.dockerfile.path=main/Dockerfile
+LABEL org.opencontainers.image.source=https://github.com/AshwinLogonSoftware/Webgoat
+
    "-jar", "webgoat.jar" ]
